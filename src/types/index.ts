@@ -32,7 +32,7 @@ export type SiteConfig = {
   address: string;
   hours: string;
   closedDay: string;
-  phone: string;
+  phone?: string;
   nearestStation: string;
   sns: {
     twitter: string;

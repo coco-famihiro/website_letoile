@@ -26,7 +26,7 @@ function PriceBlock({
       <p className="text-lavender/70 text-sm mb-1">{label}</p>
       <p className="text-white font-serif text-lg font-bold mb-1">{time}</p>
       <p className="text-star-gold font-bold text-xl">{price}</p>
-      {sub && <p className="text-lilac text-sm mt-1.5">({sub})</p>}
+      {sub && <p className="text-soft-pink font-bold text-base mt-1.5">({sub})</p>}
     </div>
   );
 }
