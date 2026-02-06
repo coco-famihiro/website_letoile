@@ -1,0 +1,127 @@
+import type { MenuItem } from "@/types";
+
+export const menuItems: MenuItem[] = [
+  // フード
+  {
+    id: "f1",
+    name: "流れ星のハンバーグプレート",
+    nameEn: "Shooting Star Hamburg",
+    description: "特製デミグラスソースが流れ星のように輝くハンバーグ。ライスとサラダ付き。",
+    price: 1280,
+    category: "food",
+    isRecommended: true,
+  },
+  {
+    id: "f2",
+    name: "星屑のクリームパスタ",
+    nameEn: "Stardust Cream Pasta",
+    description: "きのこたっぷりのクリームパスタ。金箔を散りばめた星屑仕立て。",
+    price: 1180,
+    category: "food",
+    isNew: true,
+  },
+  {
+    id: "f3",
+    name: "北斗七星カレー",
+    nameEn: "Big Dipper Curry",
+    description: "7種のスパイスを使った本格カレー。星型にくり抜いた野菜がポイント。",
+    price: 1080,
+    category: "food",
+  },
+  {
+    id: "f4",
+    name: "天の川オムライス",
+    nameEn: "Milky Way Omelette Rice",
+    description: "ふわとろ卵に天の川をイメージしたソースをかけた人気メニュー。",
+    price: 1180,
+    category: "food",
+    isRecommended: true,
+  },
+  // ドリンク
+  {
+    id: "d1",
+    name: "オリオン座のブルーソーダ",
+    nameEn: "Orion Blue Soda",
+    description: "蝶豆花で色付けした幻想的なブルーソーダ。星型の氷が浮かびます。",
+    price: 680,
+    category: "drink",
+    isRecommended: true,
+  },
+  {
+    id: "d2",
+    name: "夕暮れの惑星ラテ",
+    nameEn: "Twilight Planet Latte",
+    description: "グラデーションが美しいカフェラテ。見た目も味も楽しめます。",
+    price: 720,
+    category: "drink",
+    isNew: true,
+  },
+  {
+    id: "d3",
+    name: "月光カモミールティー",
+    nameEn: "Moonlight Chamomile Tea",
+    description: "月のように穏やかなカモミールティー。はちみつを添えて。",
+    price: 580,
+    category: "drink",
+  },
+  {
+    id: "d4",
+    name: "星降る夜のホットチョコレート",
+    nameEn: "Starfall Hot Chocolate",
+    description: "とろける濃厚ホットチョコレート。マシュマロの星が浮かびます。",
+    price: 650,
+    category: "drink",
+  },
+  // デザート
+  {
+    id: "s1",
+    name: "星空のプラネタリウムパフェ",
+    nameEn: "Planetarium Parfait",
+    description: "夜空をイメージした大きなパフェ。ベリーとチョコレートの二重奏。",
+    price: 1380,
+    category: "dessert",
+    isRecommended: true,
+  },
+  {
+    id: "s2",
+    name: "お星さまのフレンチトースト",
+    nameEn: "Little Star French Toast",
+    description: "星型のフレンチトースト。メープルシロップとバニラアイス添え。",
+    price: 980,
+    category: "dessert",
+  },
+  {
+    id: "s3",
+    name: "三日月のチーズケーキ",
+    nameEn: "Crescent Moon Cheesecake",
+    description: "三日月型の濃厚チーズケーキ。ベリーソースの夜空を添えて。",
+    price: 780,
+    category: "dessert",
+    isNew: true,
+  },
+  // 限定メニュー
+  {
+    id: "l1",
+    name: "冬の星座カクテル（ノンアル）",
+    nameEn: "Winter Constellation Mocktail",
+    description: "冬季限定。ゆずとラベンダーの香るノンアルコールカクテル。",
+    price: 780,
+    category: "limited",
+    isNew: true,
+  },
+  {
+    id: "l2",
+    name: "ふたご座流星群プレート",
+    nameEn: "Geminids Meteor Shower Plate",
+    description: "12月限定の特別プレート。流れ星に見立てたデコレーション。",
+    price: 1580,
+    category: "limited",
+  },
+];
+
+export const menuCategories = [
+  { key: "food" as const, label: "フード", icon: "🍽️" },
+  { key: "drink" as const, label: "ドリンク", icon: "🥤" },
+  { key: "dessert" as const, label: "デザート", icon: "🍰" },
+  { key: "limited" as const, label: "限定メニュー", icon: "✨" },
+];

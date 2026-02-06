@@ -1,0 +1,104 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-night: #1a1a2e;
+  --color-navy: #2d2b55;
+  --color-indigo: #3b3775;
+  --color-lavender: #b8b5d4;
+  --color-lilac: #d4b8e0;
+  --color-soft-pink: #f0d6e8;
+  --color-cream: #faf5f0;
+  --color-star-gold: #ffd375;
+  --color-star-pale: #fff8e7;
+  --color-text: #2d2b55;
+  --color-text-muted: #8886a8;
+
+  --font-sans: "Zen Maru Gothic", sans-serif;
+  --font-serif: "Zen Old Mincho", serif;
+}
+
+/* Base styles */
+body {
+  background: var(--color-cream);
+  color: var(--color-text);
+  font-family: var(--font-sans);
+}
+
+/* Star animation keyframes */
+@keyframes twinkle {
+  0%,
+  100% {
+    opacity: 0.3;
+    transform: scale(0.8);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.2);
+  }
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: -200% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Utility classes */
+.star {
+  will-change: opacity, transform;
+  animation: twinkle var(--duration, 3s) var(--delay, 0s) infinite ease-in-out;
+}
+
+.float {
+  animation: float 6s ease-in-out infinite;
+}
+
+.gradient-sky {
+  background: linear-gradient(180deg, #1a1a2e 0%, #2d2b55 40%, #3b3775 70%, #5c5a8a 100%);
+}
+
+.gradient-cream {
+  background: linear-gradient(180deg, #faf5f0 0%, #f0e8f5 100%);
+}
+
+/* Scrollbar styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-cream);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-lavender);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-lilac);
+}
