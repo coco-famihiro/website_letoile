@@ -25,12 +25,6 @@ export default function AccessPage() {
           <AccessInfo />
           <MapEmbed />
         </div>
-
-        {/* Additional notes */}
-        <div className="mt-10 text-center text-lavender/50 text-xs space-y-1">
-          <p>※ ご予約なしでもご来店いただけます。混雑時はお待ちいただく場合がございます。</p>
-          <p>※ 大人数でのご来店は事前にお電話にてご相談ください。</p>
-        </div>
       </div>
     </div>
   );
