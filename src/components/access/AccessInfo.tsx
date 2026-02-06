@@ -53,7 +53,7 @@ const infoRows = [
 export function AccessInfo() {
   return (
     <Card hover={false} className="p-6 md:p-8">
-      <h3 className="font-serif text-lg font-bold text-text mb-6">店舗情報</h3>
+      <h3 className="font-serif text-lg font-bold text-white mb-6">店舗情報</h3>
 
       <div className="space-y-5">
         {infoRows.map((row, i) => (
@@ -62,22 +62,22 @@ export function AccessInfo() {
               {row.icon}
             </div>
             <div>
-              <p className="text-text-muted text-xs mb-0.5">{row.label}</p>
-              <p className="text-text text-sm">{row.value}</p>
+              <p className="text-lavender/50 text-xs mb-0.5">{row.label}</p>
+              <p className="text-white text-sm">{row.value}</p>
             </div>
           </div>
         ))}
       </div>
 
       {/* SNS Links */}
-      <div className="mt-8 pt-6 border-t border-text/10">
-        <p className="text-text-muted text-xs mb-3">SNS</p>
+      <div className="mt-8 pt-6 border-t border-lavender/10">
+        <p className="text-lavender/50 text-xs mb-3">SNS</p>
         <div className="flex gap-3">
           <a
             href={siteConfig.sns.twitter}
             target="_blank"
             rel="noopener noreferrer"
-            className="w-10 h-10 rounded-full bg-navy/10 flex items-center justify-center text-text-muted hover:bg-star-gold/20 hover:text-star-gold transition-all"
+            className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-lavender/60 hover:bg-star-gold/20 hover:text-star-gold transition-all"
             aria-label="Twitter"
           >
             <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
@@ -88,7 +88,7 @@ export function AccessInfo() {
             href={siteConfig.sns.instagram}
             target="_blank"
             rel="noopener noreferrer"
-            className="w-10 h-10 rounded-full bg-navy/10 flex items-center justify-center text-text-muted hover:bg-star-gold/20 hover:text-star-gold transition-all"
+            className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center text-lavender/60 hover:bg-star-gold/20 hover:text-star-gold transition-all"
             aria-label="Instagram"
           >
             <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">

@@ -7,7 +7,7 @@ export function HighlightSection() {
   const recommended = menuItems.filter((item) => item.isRecommended).slice(0, 3);
 
   return (
-    <section className="py-20 md:py-28 px-4 bg-cream">
+    <section className="py-20 md:py-28 px-4 bg-navy/50">
       <div className="mx-auto max-w-6xl">
         <SectionHeading title="おすすめメニュー" subtitle="RECOMMENDATION" />
 
@@ -24,19 +24,19 @@ export function HighlightSection() {
 
               <div className="p-5">
                 {item.isNew && (
-                  <span className="inline-block px-2 py-0.5 rounded-full bg-soft-pink text-text text-[10px] font-bold mb-2">
+                  <span className="inline-block px-2 py-0.5 rounded-full bg-soft-pink text-night text-[10px] font-bold mb-2">
                     NEW
                   </span>
                 )}
-                <h3 className="font-serif text-base font-bold text-text mb-1">
+                <h3 className="font-serif text-base font-bold text-white mb-1">
                   {item.name}
                 </h3>
                 {item.nameEn && (
-                  <p className="text-text-muted text-[10px] tracking-wide mb-2">
+                  <p className="text-lavender/50 text-[10px] tracking-wide mb-2">
                     {item.nameEn}
                   </p>
                 )}
-                <p className="text-text-muted text-xs leading-relaxed mb-3">
+                <p className="text-lavender/70 text-xs leading-relaxed mb-3">
                   {item.description}
                 </p>
                 <p className="text-star-gold font-bold text-sm">
@@ -50,7 +50,7 @@ export function HighlightSection() {
         <div className="text-center mt-10">
           <Link
             href="/menu"
-            className="inline-flex items-center gap-2 text-sm text-text-muted hover:text-text transition-colors"
+            className="inline-flex items-center gap-2 text-sm text-lavender/60 hover:text-star-gold transition-colors"
           >
             すべてのメニューを見る
             <svg className="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">

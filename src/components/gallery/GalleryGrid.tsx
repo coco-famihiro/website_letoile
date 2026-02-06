@@ -27,7 +27,7 @@ export function GalleryGrid() {
               "px-5 py-2.5 rounded-full text-sm font-medium transition-all duration-300",
               activeCategory === cat.key
                 ? "bg-star-gold text-night shadow-[0_0_15px_rgba(255,211,117,0.2)]"
-                : "bg-white text-text-muted hover:bg-lilac/20 hover:text-text"
+                : "bg-white/5 text-lavender/70 border border-lavender/20 hover:bg-white/10 hover:text-white"
             )}
           >
             {cat.label}
@@ -42,7 +42,7 @@ export function GalleryGrid() {
             key={item.id}
             onClick={() => setSelectedItem(item)}
             className={cn(
-              "group relative overflow-hidden rounded-xl transition-all duration-300 hover:-translate-y-1 hover:shadow-lg",
+              "group relative overflow-hidden rounded-xl transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_8px_30px_rgba(255,211,117,0.1)]",
               i % 5 === 0 ? "row-span-2 aspect-[3/4]" : "aspect-square"
             )}
           >

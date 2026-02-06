@@ -19,9 +19,9 @@ export function EventCard({ event }: EventCardProps) {
   return (
     <Card className="flex flex-col sm:flex-row overflow-visible">
       {/* Date badge */}
-      <div className="sm:w-24 sm:min-h-full flex sm:flex-col items-center justify-center gap-2 sm:gap-0 p-4 bg-gradient-to-br from-star-gold/10 to-star-pale/30 sm:rounded-l-2xl">
+      <div className="sm:w-24 sm:min-h-full flex sm:flex-col items-center justify-center gap-2 sm:gap-0 p-4 bg-star-gold/5 sm:rounded-l-2xl border-b sm:border-b-0 sm:border-r border-lavender/10">
         <span className="text-star-gold text-xs font-bold">{month}</span>
-        <span className="text-text text-2xl font-serif font-bold">{day}</span>
+        <span className="text-white text-2xl font-serif font-bold">{day}</span>
       </div>
 
       {/* Content */}
@@ -31,25 +31,25 @@ export function EventCard({ event }: EventCardProps) {
             className={cn(
               "px-2 py-0.5 rounded-full text-[10px] font-bold shrink-0",
               event.category === "event"
-                ? "bg-lilac/30 text-indigo"
-                : "bg-star-gold/20 text-text"
+                ? "bg-lilac/20 text-lilac"
+                : "bg-star-gold/15 text-star-gold"
             )}
           >
             {event.category === "event" ? "イベント" : "おしらせ"}
           </span>
         </div>
 
-        <h3 className="font-serif text-base font-bold text-text mb-2">
+        <h3 className="font-serif text-base font-bold text-white mb-2">
           {event.title}
         </h3>
 
-        <p className="text-text-muted text-sm leading-relaxed">
+        <p className="text-lavender/70 text-sm leading-relaxed">
           {isExpanded ? event.content : event.summary}
         </p>
 
         <button
           onClick={() => setIsExpanded(!isExpanded)}
-          className="mt-3 text-xs text-text-muted hover:text-star-gold transition-colors inline-flex items-center gap-1"
+          className="mt-3 text-xs text-lavender/60 hover:text-star-gold transition-colors inline-flex items-center gap-1"
         >
           {isExpanded ? "閉じる" : "詳しく見る"}
           <svg

@@ -19,8 +19,8 @@
 
 /* Base styles */
 body {
-  background: var(--color-cream);
-  color: var(--color-text);
+  background: var(--color-night);
+  color: var(--color-lavender);
   font-family: var(--font-sans);
 }
 
@@ -81,6 +81,10 @@ body {
   background: linear-gradient(180deg, #1a1a2e 0%, #2d2b55 40%, #3b3775 70%, #5c5a8a 100%);
 }
 
+.gradient-sky-subtle {
+  background: linear-gradient(180deg, #2d2b55 0%, #3b3775 50%, #2d2b55 100%);
+}
+
 .gradient-cream {
   background: linear-gradient(180deg, #faf5f0 0%, #f0e8f5 100%);
 }
@@ -91,14 +95,14 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--color-cream);
+  background: var(--color-night);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--color-lavender);
+  background: var(--color-indigo);
   border-radius: 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--color-lilac);
+  background: var(--color-lavender);
 }

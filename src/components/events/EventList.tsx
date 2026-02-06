@@ -31,7 +31,7 @@ export function EventList() {
               "px-5 py-2.5 rounded-full text-sm font-medium transition-all duration-300",
               activeCategory === cat.key
                 ? "bg-star-gold text-night shadow-[0_0_15px_rgba(255,211,117,0.2)]"
-                : "bg-white text-text-muted hover:bg-lilac/20 hover:text-text"
+                : "bg-white/5 text-lavender/70 border border-lavender/20 hover:bg-white/10 hover:text-white"
             )}
           >
             {cat.label}
@@ -47,7 +47,7 @@ export function EventList() {
       </div>
 
       {filtered.length === 0 && (
-        <p className="text-center text-text-muted text-sm py-12">
+        <p className="text-center text-lavender/50 text-sm py-12">
           該当する記事はありません。
         </p>
       )}

@@ -22,7 +22,7 @@ export function MenuCategory() {
               "px-5 py-2.5 rounded-full text-sm font-medium transition-all duration-300",
               activeCategory === cat.key
                 ? "bg-star-gold text-night shadow-[0_0_15px_rgba(255,211,117,0.2)]"
-                : "bg-white text-text-muted hover:bg-lilac/20 hover:text-text"
+                : "bg-white/5 text-lavender/70 border border-lavender/20 hover:bg-white/10 hover:text-white"
             )}
           >
             <span className="mr-1.5">{cat.icon}</span>

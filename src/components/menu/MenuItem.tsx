@@ -18,7 +18,7 @@ export function MenuItem({ item }: MenuItemProps) {
         {/* Badges */}
         <div className="absolute top-3 left-3 flex gap-1.5">
           {item.isNew && (
-            <span className="px-2 py-0.5 rounded-full bg-soft-pink text-text text-[10px] font-bold">
+            <span className="px-2 py-0.5 rounded-full bg-soft-pink text-night text-[10px] font-bold">
               NEW
             </span>
           )}
@@ -31,15 +31,15 @@ export function MenuItem({ item }: MenuItemProps) {
       </div>
 
       <div className="p-4">
-        <h3 className="font-serif text-sm font-bold text-text mb-0.5">
+        <h3 className="font-serif text-sm font-bold text-white mb-0.5">
           {item.name}
         </h3>
         {item.nameEn && (
-          <p className="text-text-muted text-[10px] tracking-wide mb-2">
+          <p className="text-lavender/50 text-[10px] tracking-wide mb-2">
             {item.nameEn}
           </p>
         )}
-        <p className="text-text-muted text-xs leading-relaxed mb-3">
+        <p className="text-lavender/70 text-xs leading-relaxed mb-3">
           {item.description}
         </p>
         <p className="text-star-gold font-bold text-sm">

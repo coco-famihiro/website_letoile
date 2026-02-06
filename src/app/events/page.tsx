@@ -10,11 +10,11 @@ export const metadata: Metadata = {
 
 export default function EventsPage() {
   return (
-    <div className="pt-24 pb-20 px-4 gradient-cream min-h-screen">
+    <div className="pt-24 pb-20 px-4 gradient-sky-subtle min-h-screen">
       <div className="mx-auto max-w-6xl">
         <SectionHeading title="イベント・おしらせ" subtitle="EVENTS & NEWS" />
 
-        <p className="text-center text-text-muted text-sm mb-12 max-w-md mx-auto">
+        <p className="text-center text-lavender/70 text-sm mb-12 max-w-md mx-auto">
           星空食堂レトワールの最新イベント情報や
           <br />
           おしらせをお届けします。

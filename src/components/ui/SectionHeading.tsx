@@ -1,48 +1,33 @@
 type SectionHeadingProps = {
   title: string;
   subtitle?: string;
-  dark?: boolean;
 };
 
-export function SectionHeading({ title, subtitle, dark = false }: SectionHeadingProps) {
+export function SectionHeading({ title, subtitle }: SectionHeadingProps) {
   return (
     <div className="text-center mb-10 md:mb-14">
       {/* Star decoration */}
       <div className="flex items-center justify-center gap-3 mb-3">
-        <span className={`text-xs ${dark ? "text-star-gold/60" : "text-star-gold"}`}>
-          &#10022;
-        </span>
-        <span className={`block w-12 h-px ${dark ? "bg-lavender/30" : "bg-text/20"}`} />
-        <span className={`text-xs ${dark ? "text-star-gold/60" : "text-star-gold"}`}>
-          &#10022;
-        </span>
+        <span className="text-xs text-star-gold/60">&#10022;</span>
+        <span className="block w-12 h-px bg-lavender/30" />
+        <span className="text-xs text-star-gold/60">&#10022;</span>
       </div>
 
-      <h2
-        className={`font-serif text-2xl md:text-3xl font-bold tracking-wide ${
-          dark ? "text-white" : "text-text"
-        }`}
-      >
+      <h2 className="font-serif text-2xl md:text-3xl font-bold tracking-wide text-white">
         {title}
       </h2>
 
       {subtitle && (
-        <p
-          className={`mt-2 text-sm tracking-widest ${
-            dark ? "text-lavender/60" : "text-text-muted"
-          }`}
-        >
+        <p className="mt-2 text-sm tracking-widest text-lavender/60">
           {subtitle}
         </p>
       )}
 
       {/* Bottom decoration */}
       <div className="flex items-center justify-center gap-3 mt-3">
-        <span className={`block w-8 h-px ${dark ? "bg-lavender/30" : "bg-text/20"}`} />
-        <span className={`text-[10px] ${dark ? "text-star-gold/40" : "text-star-gold/60"}`}>
-          &#9733;
-        </span>
-        <span className={`block w-8 h-px ${dark ? "bg-lavender/30" : "bg-text/20"}`} />
+        <span className="block w-8 h-px bg-lavender/30" />
+        <span className="text-[10px] text-star-gold/40">&#9733;</span>
+        <span className="block w-8 h-px bg-lavender/30" />
       </div>
     </div>
   );

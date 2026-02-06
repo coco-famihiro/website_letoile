@@ -11,11 +11,11 @@ export const metadata: Metadata = {
 
 export default function AccessPage() {
   return (
-    <div className="pt-24 pb-20 px-4 gradient-cream min-h-screen">
+    <div className="pt-24 pb-20 px-4 gradient-sky-subtle min-h-screen">
       <div className="mx-auto max-w-6xl">
         <SectionHeading title="アクセス" subtitle="ACCESS" />
 
-        <p className="text-center text-text-muted text-sm mb-12 max-w-md mx-auto">
+        <p className="text-center text-lavender/70 text-sm mb-12 max-w-md mx-auto">
           ご来店をお待ちしております。
           <br />
           お気軽にお越しください。
@@ -27,7 +27,7 @@ export default function AccessPage() {
         </div>
 
         {/* Additional notes */}
-        <div className="mt-10 text-center text-text-muted text-xs space-y-1">
+        <div className="mt-10 text-center text-lavender/50 text-xs space-y-1">
           <p>※ ご予約なしでもご来店いただけます。混雑時はお待ちいただく場合がございます。</p>
           <p>※ 大人数でのご来店は事前にお電話にてご相談ください。</p>
         </div>
