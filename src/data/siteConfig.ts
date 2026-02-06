@@ -18,6 +18,7 @@ export const siteConfig: SiteConfig = {
 export const navLinks = [
   { href: "/", label: "トップ" },
   { href: "/menu", label: "メニュー" },
+  { href: "/system", label: "システム" },
   { href: "/gallery", label: "ギャラリー" },
   { href: "/events", label: "イベント" },
   { href: "/access", label: "アクセス" },
