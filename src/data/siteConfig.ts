@@ -9,8 +9,7 @@ export const siteConfig: SiteConfig = {
   closedDay: "毎週月曜日",
   nearestStation: "JR秋葉原駅 徒歩3分 / 都営新宿線岩本町駅 徒歩5分",
   sns: {
-    twitter: "https://twitter.com/letoile_example",
-    instagram: "https://instagram.com/letoile_example",
+    twitter: "https://x.com/letoile_AKB",
   },
 };
 

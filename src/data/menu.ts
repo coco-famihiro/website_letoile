@@ -72,6 +72,32 @@ export const menuItems: MenuItem[] = [
     price: 650,
     category: "drink",
   },
+  // ボトル
+  {
+    id: "b1",
+    name: "星のしずく スパークリングワイン",
+    nameEn: "Stardrop Sparkling Wine",
+    description: "フルーティーな香りが広がるスパークリングワイン。お祝いや特別な夜に。",
+    price: 5000,
+    category: "bottle",
+    isRecommended: true,
+  },
+  {
+    id: "b2",
+    name: "銀河の雫 赤ワイン",
+    nameEn: "Galaxy Drop Red Wine",
+    description: "芳醇な果実味とまろやかなタンニンのバランスが絶妙な赤ワイン。",
+    price: 5000,
+    category: "bottle",
+  },
+  {
+    id: "b3",
+    name: "月明かりの白ワイン",
+    nameEn: "Moonlit White Wine",
+    description: "すっきりとした飲み口の白ワイン。魚料理やデザートとの相性も抜群。",
+    price: 5000,
+    category: "bottle",
+  },
   // デザート
   {
     id: "s1",
@@ -120,8 +146,9 @@ export const menuItems: MenuItem[] = [
 ];
 
 export const menuCategories = [
+  { key: "limited" as const, label: "限定メニュー", icon: "✨" },
   { key: "food" as const, label: "フード", icon: "🍽️" },
   { key: "drink" as const, label: "ドリンク", icon: "🥤" },
+  { key: "bottle" as const, label: "ボトル", icon: "🍾" },
   { key: "dessert" as const, label: "デザート", icon: "🍰" },
-  { key: "limited" as const, label: "限定メニュー", icon: "✨" },
 ];

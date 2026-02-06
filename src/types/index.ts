@@ -4,7 +4,7 @@ export type MenuItem = {
   nameEn?: string;
   description: string;
   price: number;
-  category: "food" | "drink" | "dessert" | "limited";
+  category: "food" | "drink" | "bottle" | "dessert" | "limited";
   isNew?: boolean;
   isRecommended?: boolean;
 };
@@ -36,6 +36,5 @@ export type SiteConfig = {
   nearestStation: string;
   sns: {
     twitter: string;
-    instagram: string;
   };
 };

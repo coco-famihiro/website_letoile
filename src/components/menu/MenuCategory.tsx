@@ -6,7 +6,7 @@ import { MenuItem } from "./MenuItem";
 import { cn } from "@/lib/utils";
 
 export function MenuCategory() {
-  const [activeCategory, setActiveCategory] = useState<string>("food");
+  const [activeCategory, setActiveCategory] = useState<string>("limited");
 
   const filtered = menuItems.filter((item) => item.category === activeCategory);
 
